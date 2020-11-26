@@ -585,6 +585,13 @@ enum quantum_keycodes {
 
 #endif
 
+    // Tapping term setup
+#ifdef TAP_TERM_KEYS_ENABLE
+    KC_TAPP,
+    KC_TAPU,
+    KC_TAPD,
+#endif
+
     // always leave at the end
     SAFE_RANGE
 };
