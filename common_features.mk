@@ -594,3 +594,8 @@ endif
 ifeq ($(strip $(JOYSTICK_ENABLE)), digital)
     OPT_DEFS += -DDIGITAL_JOYSTICK_ENABLE
 endif
+
+ifeq ($(strip $(TAP_TERM_KEYS_ENABLE)), yes)
+    SRC += $(QUANTUM_DIR)/process_keycode/process_tap_term_keys.c
+    OPT_DEFS += -DTAP_TERM_KEYS_ENABLE
+endif
