@@ -48,3 +48,6 @@
 #define LEADER_PER_KEY_TIMING
 // For faster leader replacements
 #define USB_POLLING_INTERVAL_MS 1
+
+// Bilateral combinations
+#define BILATERAL_COMBINATIONS
